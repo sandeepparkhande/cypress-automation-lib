@@ -1,0 +1,5 @@
+{
+    "testFiles": "**/*.{feature,features}",
+    "pageLoadTimeout": 200000,
+    "chromeWebSecurity": false
+}

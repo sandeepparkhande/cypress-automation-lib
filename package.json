@@ -1,0 +1,44 @@
+{
+    "name": "cypress.automation",
+    "version": "1.0.0",
+    "description": "Cypress Automation Library",
+    "main": "index.js",
+    "scripts": {
+        "cy:ui": "cypress open",
+        "test": "cypress run --spec \"**/*.feature\"",
+        "test:all": "cypress run --spec \"**/*.features\"",
+        "posttest": "node cypress/support/cucumber-html-report.js && node cypress/support/multiple-html-report.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sandeepparkhande/cypress-automation-lib.git"
+    },
+    "author": "Sandeep Parkhande",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/sandeepparkhande/cypress-automation-lib/issues"
+    },
+    "dependencies": {
+        "@cypress/webpack-preprocessor": "^4.0.2",
+        "@types/node": "^10.12.11",
+        "cypress": "^6.9.1",
+        "cypress-cucumber-preprocessor": "4.1.0",
+        "ts-loader": "^5.3.1",
+        "typescript": "^3.2.1",
+        "webpack": "^4.28.2"
+    },
+    "cypress-cucumber-preprocessor": {
+        "nonGlobalStepDefinitions": true,
+        "cucumberJson": {
+            "generate": true,
+            "outputFolder": "cypress/cucumber-json",
+            "filePrefix": "",
+            "fileSuffix": ".json"
+        }
+    },
+    "homepage": "https://github.com/sandeepparkhande/cypress-automation-lib#readme",
+    "devDependencies": {
+        "cucumber-html-reporter": "^5.4.0",
+        "multiple-cucumber-html-reporter": "^1.18.0"
+    }
+}
