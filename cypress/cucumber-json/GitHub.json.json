@@ -45,7 +45,7 @@
             "name": "I open GitHub page",
             "result": {
               "status": "passed",
-              "duration": 2704000000
+              "duration": 1614000000
             }
           },
           {
@@ -55,7 +55,7 @@
             "name": "I see \"GitHub\" in the title",
             "result": {
               "status": "passed",
-              "duration": 24000000
+              "duration": 18000000
             }
           }
         ]
@@ -88,7 +88,7 @@
             "name": "I open GitHub page",
             "result": {
               "status": "passed",
-              "duration": 3580000000
+              "duration": 2594000000
             }
           },
           {
@@ -98,7 +98,7 @@
             "name": "I see \"GitHub\" in the title",
             "result": {
               "status": "passed",
-              "duration": 11000000
+              "duration": 10000000
             }
           }
         ]

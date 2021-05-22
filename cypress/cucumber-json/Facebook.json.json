@@ -37,7 +37,7 @@
             "name": "I open Facebook page",
             "result": {
               "status": "passed",
-              "duration": 2254000000
+              "duration": 1521000000
             }
           },
           {
@@ -47,7 +47,7 @@
             "name": "I see \"Facebook\" in the title",
             "result": {
               "status": "passed",
-              "duration": 33000000
+              "duration": 19000000
             }
           }
         ]
@@ -80,7 +80,7 @@
             "name": "I kinda open Facebook page",
             "result": {
               "status": "passed",
-              "duration": 1179000000
+              "duration": 757000000
             }
           },
           {
@@ -90,7 +90,7 @@
             "name": "I am very happy",
             "result": {
               "status": "passed",
-              "duration": 22000000
+              "duration": 5000000
             }
           }
         ]

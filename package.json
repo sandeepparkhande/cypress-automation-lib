@@ -24,6 +24,7 @@
         "cypress": "^6.9.1",
         "cypress-cucumber-preprocessor": "4.1.0",
         "ts-loader": "^5.3.1",
+        "tsify": "^4.0.1",
         "typescript": "^3.2.1",
         "webpack": "^4.28.2"
     },
@@ -38,6 +39,7 @@
     },
     "homepage": "https://github.com/sandeepparkhande/cypress-automation-lib#readme",
     "devDependencies": {
+        "@types/cypress-cucumber-preprocessor": "^4.0.0",
         "cucumber-html-reporter": "^5.4.0",
         "multiple-cucumber-html-reporter": "^1.18.0"
     }
