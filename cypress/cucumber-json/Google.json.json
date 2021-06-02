@@ -23,7 +23,7 @@
             "name": "I open Google page",
             "result": {
               "status": "passed",
-              "duration": 1575000000
+              "duration": 1815000000
             }
           },
           {
@@ -33,37 +33,17 @@
             "name": "I see \"Google\" in the title",
             "result": {
               "status": "passed",
-              "duration": 12000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "the-google;different-kind-of-opening",
-        "keyword": "Scenario",
-        "line": 9,
-        "name": "Different kind of opening",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 10,
-            "name": "I kinda open Google page",
-            "result": {
-              "status": "passed",
-              "duration": 626000000
+              "duration": 107000000
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
-            "line": 11,
-            "name": "I am very happy",
+            "keyword": "And ",
+            "line": 8,
+            "name": "I type Cognizant page",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 1115000000
             }
           }
         ]
