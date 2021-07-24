@@ -8,7 +8,4 @@ Feature: The Facebook
     Given I open Facebook page
     Then I see "Facebook" in the title
 
-  @another-tag-to-include @some-other-tag
-  Scenario: Different kind of opening
-    Given I kinda open Facebook page
-    Then I am very happy
+

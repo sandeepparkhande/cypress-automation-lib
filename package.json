@@ -7,7 +7,8 @@
         "cy:ui": "cypress open",
         "test": "cypress run --spec \"**/*.feature\"",
         "test:all": "cypress run --spec \"**/*.features\"",
-        "posttest": "node cypress/support/cucumber-html-report.js && node cypress/support/multiple-html-report.js"
+        "posttest": "node cypress/support/cucumber-html-report.js && node cypress/support/multiple-html-report.js",
+        "cy:tags": "cypress-tags run --spec \"**/*.feature\" -e TAGS='@Smoke'"
     },
     "repository": {
         "type": "git",
@@ -21,16 +22,20 @@
     "dependencies": {
         "@cypress/webpack-preprocessor": "^4.0.2",
         "@types/node": "^10.12.11",
+        "cucumber-expressions": "^6.0.1",
+        "cucumber-tag-expressions": "^1.1.1",
         "cypress": "^6.9.1",
         "cypress-automation-lib": "^1.0.0",
         "cypress-cucumber-preprocessor": "4.1.0",
+        "gherkin": "^5.1.0",
         "ts-loader": "^5.3.1",
         "tsify": "^4.0.1",
         "typescript": "^3.2.1",
         "webpack": "^4.28.2"
     },
     "cypress-cucumber-preprocessor": {
-        "nonGlobalStepDefinitions": true,
+        "nonGlobalStepDefinitions": false,
+        "stepDefinitions": "cypress/integration/step_definitions",
         "cucumberJson": {
             "generate": true,
             "outputFolder": "cypress/cucumber-json",

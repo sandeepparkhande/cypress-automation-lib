@@ -37,7 +37,7 @@
             "name": "I open Facebook page",
             "result": {
               "status": "passed",
-              "duration": 1521000000
+              "duration": 1697000000
             }
           },
           {
@@ -47,50 +47,7 @@
             "name": "I see \"Facebook\" in the title",
             "result": {
               "status": "passed",
-              "duration": 19000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "the-facebook;different-kind-of-opening",
-        "keyword": "Scenario",
-        "line": 12,
-        "name": "Different kind of opening",
-        "tags": [
-          {
-            "name": "@feature-tag",
-            "line": 1
-          },
-          {
-            "name": "@another-tag-to-include",
-            "line": 11
-          },
-          {
-            "name": "@some-other-tag",
-            "line": 11
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 13,
-            "name": "I kinda open Facebook page",
-            "result": {
-              "status": "passed",
-              "duration": 757000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 14,
-            "name": "I am very happy",
-            "result": {
-              "status": "passed",
-              "duration": 5000000
+              "duration": 50000000
             }
           }
         ]

@@ -1,5 +1,6 @@
 {
-    "testFiles": "**/*.{feature,features}",
+    "testFiles": ["**/*.feature"],
     "pageLoadTimeout": 200000,
-    "chromeWebSecurity": false
+    "chromeWebSecurity": false,
+    "video": false
 }
