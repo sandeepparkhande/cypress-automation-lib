@@ -1,6 +1,7 @@
 {
-    "testFiles": ["**/*.feature"],
-    "pageLoadTimeout": 200000,
+    "testFiles": "**/*.feature",
+    "ignoreTestFiles": ["*.js", "*.ts", "*.md"],
+    "pageLoadTimeout": 20000,
     "chromeWebSecurity": false,
     "video": false
 }

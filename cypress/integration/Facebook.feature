@@ -1,11 +1,6 @@
-@feature-tag
-Feature: The Facebook
+Feature: The Facebook I want to open a social network page
 
-  I want to open a social network page
-
-  @tag-to-include
+  @Smoke
   Scenario: Opening a social network page
     Given I open Facebook page
     Then I see "Facebook" in the title
-
-

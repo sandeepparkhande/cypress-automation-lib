@@ -1,10 +1,9 @@
 [
   {
-    "description": "  I want to GitHub Things",
     "keyword": "Feature",
-    "name": "The Github",
+    "name": "The Github I want to GitHub Things",
     "line": 2,
-    "id": "the-github",
+    "id": "the-github-i-want-to-github-things",
     "tags": [
       {
         "name": "@feature-tag",
@@ -18,9 +17,9 @@
     "uri": "GitHub.feature",
     "elements": [
       {
-        "id": "the-github;opening-github",
+        "id": "the-github-i-want-to-github-things;opening-github",
         "keyword": "Scenario",
-        "line": 7,
+        "line": 5,
         "name": "Opening GitHub",
         "tags": [
           {
@@ -32,8 +31,8 @@
             "line": 1
           },
           {
-            "name": "@tag-to-include",
-            "line": 6
+            "name": "@focus",
+            "line": 4
           }
         ],
         "type": "scenario",
@@ -41,64 +40,21 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 8,
+            "line": 6,
             "name": "I open GitHub page",
             "result": {
               "status": "passed",
-              "duration": 2603000000
+              "duration": 1639000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 9,
+            "line": 7,
             "name": "I see \"GitHub\" in the title",
             "result": {
               "status": "passed",
-              "duration": 34000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "the-github;opening-github-again",
-        "keyword": "Scenario",
-        "line": 12,
-        "name": "Opening GitHub again",
-        "tags": [
-          {
-            "name": "@feature-tag",
-            "line": 1
-          },
-          {
-            "name": "@github-tag",
-            "line": 1
-          },
-          {
-            "name": "@another-tag-to-include",
-            "line": 11
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 13,
-            "name": "I open GitHub page",
-            "result": {
-              "status": "passed",
-              "duration": 939000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 14,
-            "name": "I see \"GitHub\" in the title",
-            "result": {
-              "status": "passed",
-              "duration": 21000000
+              "duration": 17000000
             }
           }
         ]

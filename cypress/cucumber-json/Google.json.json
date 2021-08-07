@@ -11,44 +11,39 @@
       {
         "id": "the-google;opening-a-google-network-page",
         "keyword": "Scenario",
-        "line": 6,
+        "line": 5,
         "name": "Opening a Google network page",
-        "tags": [
-          {
-            "name": "@Smoke",
-            "line": 5
-          }
-        ],
+        "tags": [],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 7,
+            "line": 6,
             "name": "I open Google page",
             "result": {
               "status": "passed",
-              "duration": 1717000000
+              "duration": 1500000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 8,
+            "line": 7,
             "name": "I see \"Google\" in the title",
             "result": {
               "status": "passed",
-              "duration": 46000000
+              "duration": 13000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 9,
+            "line": 8,
             "name": "I type Cognizant page",
             "result": {
               "status": "passed",
-              "duration": 746000000
+              "duration": 355000000
             }
           }
         ]

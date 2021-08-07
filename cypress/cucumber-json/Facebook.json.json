@@ -1,31 +1,21 @@
 [
   {
-    "description": "  I want to open a social network page",
     "keyword": "Feature",
-    "name": "The Facebook",
-    "line": 2,
-    "id": "the-facebook",
-    "tags": [
-      {
-        "name": "@feature-tag",
-        "line": 1
-      }
-    ],
+    "name": "The Facebook I want to open a social network page",
+    "line": 1,
+    "id": "the-facebook-i-want-to-open-a-social-network-page",
+    "tags": [],
     "uri": "Facebook.feature",
     "elements": [
       {
-        "id": "the-facebook;opening-a-social-network-page",
+        "id": "the-facebook-i-want-to-open-a-social-network-page;opening-a-social-network-page",
         "keyword": "Scenario",
-        "line": 7,
+        "line": 4,
         "name": "Opening a social network page",
         "tags": [
           {
-            "name": "@feature-tag",
-            "line": 1
-          },
-          {
-            "name": "@tag-to-include",
-            "line": 6
+            "name": "@Smoke",
+            "line": 3
           }
         ],
         "type": "scenario",
@@ -33,21 +23,21 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 8,
+            "line": 5,
             "name": "I open Facebook page",
             "result": {
               "status": "passed",
-              "duration": 1697000000
+              "duration": 1475000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 9,
+            "line": 6,
             "name": "I see \"Facebook\" in the title",
             "result": {
               "status": "passed",
-              "duration": 50000000
+              "duration": 17000000
             }
           }
         ]
