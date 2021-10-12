@@ -5,12 +5,12 @@
     "main": "index.js",
     "scripts": {
         "cy:ui": "cypress open",
-        "test": "node_modules/.bin/cypress run",
-        "cy:verify": "node_modules/.bin/cypress verify",
-        "cy:info": "node_modules/.bin/cypress info",
-        "test:chrome": "node_modules/.bin/cypress run --browser firefox --headless",
+        "test": "cypress run",
+        "cy:verify": "cypress verify",
+        "cy:info": "cypress info",
+        "test:chrome": "cypress run --browser chrome --headless",
         "posttest": "node cypress/support/cucumber-html-report.js && node cypress/support/multiple-html-report.js",
-        "cy:tags": "cnode_modules/.bin/cypress-tags run TAGS=@Smoke"
+        "cy:tags": "cypress-tags run TAGS=@Smoke"
     },
     "repository": {
         "type": "git",
