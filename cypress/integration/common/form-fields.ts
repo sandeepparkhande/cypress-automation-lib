@@ -16,5 +16,6 @@ export class FormFields {
   typeFormField(keyValueLabel: KeyLabelValue) {
     cy.log(" Filling input fields ", keyValueLabel.label);
     cy.get(keyValueLabel.selector).type(keyValueLabel.value);
+    cy.wait(2000);
   }
 }
