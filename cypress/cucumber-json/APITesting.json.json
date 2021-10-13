@@ -1,0 +1,42 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "The Google",
+    "line": 1,
+    "id": "the-google",
+    "tags": [],
+    "uri": "APITesting.feature",
+    "elements": [
+      {
+        "id": "the-google;api-testing",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "API Testing",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am testng GET API",
+            "result": {
+              "status": "passed",
+              "duration": 1849000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am testng BASE 64 IMG Encoding",
+            "result": {
+              "status": "passed",
+              "duration": 171000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,270 @@
+[
+  {
+    "description": "  I want to open Google page",
+    "keyword": "Feature",
+    "name": "The Google",
+    "line": 1,
+    "id": "the-google",
+    "tags": [],
+    "uri": "Google.feature",
+    "elements": [
+      {
+        "id": "the-google;opening-a-google-network-page",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Opening a Google network page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I open Google page",
+            "result": {
+              "status": "passed",
+              "duration": 3077000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I see \"Google\" in the title",
+            "result": {
+              "status": "passed",
+              "duration": 28000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I type Cognizant page",
+            "result": {
+              "status": "passed",
+              "duration": 562000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "The Facebook I want to open a social network page",
+    "line": 1,
+    "id": "the-facebook-i-want-to-open-a-social-network-page",
+    "tags": [],
+    "uri": "Facebook.feature",
+    "elements": [
+      {
+        "id": "the-facebook-i-want-to-open-a-social-network-page;opening-a-social-network-page",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Opening a social network page",
+        "tags": [
+          {
+            "name": "@Smoke",
+            "line": 3
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I open Facebook page",
+            "result": {
+              "status": "passed",
+              "duration": 4510000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I see \"Facebook\" in the title",
+            "result": {
+              "status": "passed",
+              "duration": 73000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "The Github I want to GitHub Things",
+    "line": 2,
+    "id": "the-github-i-want-to-github-things",
+    "tags": [
+      {
+        "name": "@feature-tag",
+        "line": 1
+      },
+      {
+        "name": "@github-tag",
+        "line": 1
+      }
+    ],
+    "uri": "GitHub.feature",
+    "elements": [
+      {
+        "id": "the-github-i-want-to-github-things;opening-github",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Opening GitHub",
+        "tags": [
+          {
+            "name": "@feature-tag",
+            "line": 1
+          },
+          {
+            "name": "@github-tag",
+            "line": 1
+          },
+          {
+            "name": "@focus",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I open GitHub page",
+            "result": {
+              "status": "passed",
+              "duration": 3253000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I see \"GitHub\" in the title",
+            "result": {
+              "status": "passed",
+              "duration": 23000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "The Google",
+    "line": 1,
+    "id": "the-google",
+    "tags": [],
+    "uri": "APITesting.feature",
+    "elements": [
+      {
+        "id": "the-google;api-testing",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "API Testing",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am testng GET API",
+            "result": {
+              "status": "passed",
+              "duration": 1849000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am testng BASE 64 IMG Encoding",
+            "result": {
+              "status": "passed",
+              "duration": 171000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "The Form Feature",
+    "line": 1,
+    "id": "the-form-feature",
+    "tags": [],
+    "uri": "Form.feature",
+    "elements": [
+      {
+        "id": "the-form-feature;form-feature",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Form feature",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I visit to form URL",
+            "result": {
+              "status": "passed",
+              "duration": 3288000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "I fill cypres forms",
+            "result": {
+              "status": "passed",
+              "duration": 4025000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "the-form-feature;page-object-model-form-feature",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Page Object Model Form feature",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I visit to form URL",
+            "result": {
+              "status": "passed",
+              "duration": 1082000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I fill forms using page object model",
+            "result": {
+              "status": "passed",
+              "duration": 17628000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -23,7 +23,7 @@
             "name": "I open Google page",
             "result": {
               "status": "passed",
-              "duration": 1500000000
+              "duration": 3077000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "I see \"Google\" in the title",
             "result": {
               "status": "passed",
-              "duration": 13000000
+              "duration": 28000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "I type Cognizant page",
             "result": {
               "status": "passed",
-              "duration": 355000000
+              "duration": 562000000
             }
           }
         ]
