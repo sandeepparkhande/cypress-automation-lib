@@ -6,7 +6,9 @@
     "scripts": {
         "cy:ui": "cypress open",
         "test": "cypress run",
-        "test:chrome": "cypress run --browser firefox --headless",
+        "cy:verify": "cypress verify",
+        "cy:info": "cypress info",
+        "test:chrome": "cypress run --browser chrome --headless",
         "posttest": "node cypress/support/cucumber-html-report.js && node cypress/support/multiple-html-report.js",
         "cy:tags": "cypress-tags run TAGS=@Smoke"
     },
@@ -26,7 +28,7 @@
         "cucumber": "^4.2.1",
         "cucumber-expressions": "^6.0.1",
         "cucumber-tag-expressions": "^1.1.1",
-        "cypress": "^6.9.1",
+        "cypress": "^8.6.0",
         "cypress-automation-lib": "^1.0.0",
         "cypress-cucumber-preprocessor": "^4.1.0",
         "dargs": "^7.0.0",
