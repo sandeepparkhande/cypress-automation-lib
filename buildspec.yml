@@ -17,9 +17,6 @@ phases:
       - ls
       - npm cache clean --force
       - npm install
-      - wget --quiet https://cdn.cypress.io/desktop/8.6.0/linux-x64/cypress.zip
-      - ls
-      - set CYPRESS_INSTALL_BINARY=cypress.zip
       - npm install cypress@8.6.0 --save-dev
       - echo %CYPRESS_INSTALL_BINARY%
       - npm ci
@@ -27,8 +24,11 @@ phases:
       - echo %ENV%
   pre_build:
     commands:
-       - npm ci
+      - curl -sS -o - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
+      - echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list
+      - apt-get -y update
+      - apt-get -y install google-chrome-stable
+      - npm ci
   build:
     commands:
-      - node_modules/.bin/cypress run
       - npm run test
