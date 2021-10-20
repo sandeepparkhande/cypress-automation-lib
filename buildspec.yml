@@ -9,26 +9,25 @@ batch:
         variables:
           IMAGE: public.ecr.aws/cypress-io/cypress/browsers:node12.14.1-chrome85-ff81
 
+
+env:
+  secrets-manager:
+    MY_SECRET_ENV: arn:aws:secretsmanager:us-west-2:202683722068:secret:DEVSANDEEPSECRET-5gh7Ze:ENV
+
 phases:
   install:
     runtime-versions:
       nodejs: latest
     commands:
-      - ls
       - npm cache clean --force
       - npm install
       - npm install cypress@8.6.0 --save-dev
       - echo %CYPRESS_INSTALL_BINARY%
-      - npm ci
-      - ls
-      - echo %ENV%
+      - echo '########## MY MY_SECRET_ENV *************'
+      - echo $WHO $WHAT $MY_SECRET_ENV
   pre_build:
     commands:
-      - curl -sS -o - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
-      - echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list
-      - apt-get -y update
-      - apt-get -y install google-chrome-stable
       - npm ci
   build:
     commands:
-      - npm run test
+      - echo 'npm run test'
