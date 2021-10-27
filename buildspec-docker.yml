@@ -1,0 +1,46 @@
+## buildspec.yml
+version: 0.2
+
+batch:
+  fast-fail: false
+  build-list:
+    - identifier: cypress-e2e-tests
+      env:
+        variables:
+          IMAGE: public.ecr.aws/cypress-io/cypress/browsers:node12.14.1-chrome85-ff81
+
+
+env:
+  secrets-manager:
+    MY_SECRET_ENV: arn:aws:secretsmanager:us-west-2:202683722068:secret:DEVSANDEEPSECRET-5gh7Ze:ENV
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: latest
+    commands:
+      - ls
+      - npm cache clean --force
+      - npm install
+      - npm install cypress@8.6.0 --save-dev
+      #- echo %CYPRESS_INSTALL_BINARY%
+      - npm ci
+      - ls
+      - echo '########## MY MY_SECRET_ENV *************'
+      - echo $WHO $WHAT $MY_SECRET_ENV
+  pre_build:
+    commands:
+      #- npm ci
+  build:
+    commands:
+      - docker login --username=sandeepparkhande --password=Docker@1503 
+      #- docker build .
+      - echo 'npm run test'
+      - echo Building Docker Image...
+      - docker build -t sandeepparkhande/aws-cypress .
+      #- docker tag sandeepparkhande/aws-cypress:latest
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - echo Pushing Docker image...
+      - docker push sandeepparkhande/aws-cypress:latest
